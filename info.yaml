@@ -58,6 +58,9 @@ pinout:
   ua[0]: "Vout"
   ua[1]: "Iref"
   ua[2]: "Vref"
+  ua[3]: ""
+  ua[4]: ""
+  ua[5]: ""
 
 # Do not change!
 yaml_version: 6
