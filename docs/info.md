@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+It is a basic LDO Regulator, consisting of a BJT bandgap reference, two OpAmp's, and a pass PMOS transistor.
 
 ## How to test
 
-Explain how to use your project
+Hook up a resistor of 1% 90k resistor to ua_1, as the Iref for the op amp's. Then, ua0 will be the Vout, and ua2 the Vref.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+A multimeter to measure the output voltages.

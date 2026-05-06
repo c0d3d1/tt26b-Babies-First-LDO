@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  title:        "tt26b-Babies-First-LDO"      # Project title
+  author:       "Devan Comes"      # Your name
+  discord:      "c0d3d1"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Low current, 1.8->1.4V LDO"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -55,12 +55,9 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: ""
-  ua[1]: ""
-  ua[2]: ""
-  ua[3]: ""
-  ua[4]: ""
-  ua[5]: ""
+  ua[0]: "Vout"
+  ua[1]: "Iref"
+  ua[2]: "Vref"
 
 # Do not change!
 yaml_version: 6
