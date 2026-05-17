@@ -1,0 +1,211 @@
+** sch_path: /home/devan/pro/aicex/ip/dev_ex_sky130a/design/DEV_EX_SKY130A/TB_DEV_OpAmp.sch
+**.subckt TB_DEV_OpAmp
+XQ2[7] GND GND net5 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ2[6] GND GND net5 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ2[5] GND GND net5 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ2[4] GND GND net5 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ2[3] GND GND net5 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ2[2] GND GND net5 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ2[1] GND GND net5 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ2[0] GND GND net5 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ1 GND GND net1 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+x6 net1 net2 net4 Vdd GND DEV_OPAMP
+V3 Vdd GND {VIN}
+XM13 Vref net4 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=0.36 W=30 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net3 net4 Vdd Vdd sky130_fd_pr__pfet_01v8_lvt L=0.36 W=30 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x2 Vref net6 net7 Vdd GND DEV_OPAMP
+C1 GND Vout {COUT} m=1
+XM2 Vout net7 Vdd Vdd sky130_fd_pr__pfet_01v8 L=0.18 W=88 nf=12 ad=12.76 as=14.8866666666667 pd=91.48 ps=106.726666666667
++ nrd=0.00329545454545455 nrs=0.00329545454545455 sa=0 sb=0 sd=0 mult=1 m=1
+R5 Vout GND {RLOAD} m=1
+XM3 net1 net1 Vdd Vdd sky130_fd_pr__pfet_01v8_hvt L=0.36 W=1.8 nf=1 ad=0.522 as=0.522 pd=4.18 ps=4.18 nrd=0.161111111111111
++ nrs=0.161111111111111 sa=0 sb=0 sd=0 mult=1 m=1
+XR8 net1 net3 GND sky130_fd_pr__res_high_po_0p69 L=15.9 mult=1 m=1
+XR1 net2 Vref GND sky130_fd_pr__res_high_po_0p69 L=14.5 mult=1 m=1
+XR2 net5 net2 GND sky130_fd_pr__res_high_po_0p69 L=0.9 mult=1 m=1
+XR3 net6 Vout GND sky130_fd_pr__res_high_po_0p69 L=7.4 mult=1 m=1
+XR4 GND net6 GND sky130_fd_pr__res_high_po_0p69 L=48 mult=1 m=1
+**** begin user architecture code
+
+
+.param VIN=1.8
+.param COUT=5u
+.param RLOAD=1.4k
+.lib /opt/pdk/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice sf
+
+
+
+
+.save all
+
+.control
+set corner = sf
+
+set vinfile       = vin_temp_sweep_{$corner}.txt
+set rloadfile     = rload_temp_sweep_{$corner}.txt
+set coutfile      = cout_temp_sweep_{$corner}.txt
+set coutfixedfile = cout_fixed_vin1p8_rload350_{$corner}.txt
+
+* =========================================================
+* VIN sweep over temp
+* Fixed load ~1 mA using RLOAD = 1.4k
+* =========================================================
+shell rm -f $vinfile
+echo CORNER TEMP VIN RLOAD VOUT_FINAL VREF_FINAL VOUT_MIN VOUT_MAX VREF_MIN VREF_MAX >> $vinfile
+
+alterparam RLOAD = 1.4k
+alterparam COUT = 5u
+
+foreach tval -25 25 45
+  set temp = $tval
+  foreach vdd 1.6 1.8 2.0
+    alterparam VIN = $vdd
+    reset
+    set temp = $tval
+    tran 10n 11u
+
+    meas tran vout_final FIND v(Vout) AT=10u
+    meas tran vref_final FIND v(Vref) AT=10u
+    meas tran vout_min   MIN  v(Vout)
+    meas tran vout_max   MAX  v(Vout)
+    meas tran vref_min   MIN  v(Vref)
+    meas tran vref_max   MAX  v(Vref)
+
+    echo $corner $tval $vdd 1.4k $&vout_final $&vref_final $&vout_min $&vout_max $&vref_min $&vref_max >> $vinfile
+  end
+end
+
+* =========================================================
+* RLOAD sweep over temp
+* Approx current targets at ~1.4 V:
+* 14k  -> ~0.1 mA
+* 1.4k -> ~1 mA
+* 350  -> ~4 mA
+* =========================================================
+shell rm -f $rloadfile
+echo CORNER TEMP RLOAD VOUT_FINAL VREF_FINAL VOUT_MIN VOUT_MAX VREF_MIN VREF_MAX >> $rloadfile
+
+alterparam VIN = 1.8
+alterparam COUT = 5u
+
+foreach tval -25 25 45
+  set temp = $tval
+  foreach rload 7k 1.4k 350
+    alterparam RLOAD = $rload
+    reset
+    set temp = $tval
+    tran 10n 11u
+
+    meas tran vout_final FIND v(Vout) AT=10u
+    meas tran vref_final FIND v(Vref) AT=10u
+    meas tran vout_min   MIN  v(Vout)
+    meas tran vout_max   MAX  v(Vout)
+    meas tran vref_min   MIN  v(Vref)
+    meas tran vref_max   MAX  v(Vref)
+
+    echo $corner $tval $rload $&vout_final $&vref_final $&vout_min $&vout_max $&vref_min $&vref_max >> $rloadfile
+  end
+end
+
+* =========================================================
+* COUT sweep over temp
+* Fixed VIN = 1.8 V
+* Fixed load ~1 mA using RLOAD = 1.4k
+* =========================================================
+shell rm -f $coutfile
+echo CORNER TEMP COUT RLOAD VOUT_FINAL VREF_FINAL VOUT_MIN VOUT_MAX VREF_MIN VREF_MAX >> $coutfile
+
+alterparam VIN = 1.8
+alterparam RLOAD = 1.4k
+
+foreach tval -25 25 45
+  set temp = $tval
+  foreach cout 0.1u 1u 10u
+    alterparam COUT = $cout
+    reset
+    set temp = $tval
+    tran 10n 11u
+
+    meas tran vout_final FIND v(Vout) AT=10u
+    meas tran vref_final FIND v(Vref) AT=10u
+    meas tran vout_min   MIN  v(Vout)
+    meas tran vout_max   MAX  v(Vout)
+    meas tran vref_min   MIN  v(Vref)
+    meas tran vref_max   MAX  v(Vref)
+
+    echo $corner $tval $cout 1.4k $&vout_final $&vref_final $&vout_min $&vout_max $&vref_min $&vref_max >> $coutfile
+  end
+end
+
+* =========================================================
+* Fixed VIN / heavy-load COUT sweep over temp
+* VIN = 1.8 V
+* RLOAD = 350 ohm  (~4 mA at ~1.4 V)
+* =========================================================
+shell rm -f $coutfixedfile
+echo CORNER TEMP COUT RLOAD VOUT_FINAL VREF_FINAL VOUT_MIN VOUT_MAX VREF_MIN VREF_MAX >> $coutfixedfile
+
+alterparam VIN = 1.8
+alterparam RLOAD = 350
+
+foreach tval -25 25 45
+  set temp = $tval
+  foreach cout 0.1u 1u 10u
+    alterparam COUT = $cout
+    reset
+    set temp = $tval
+    tran 10n 11u
+
+    meas tran vout_final FIND v(Vout) AT=10u
+    meas tran vref_final FIND v(Vref) AT=10u
+    meas tran vout_min   MIN  v(Vout)
+    meas tran vout_max   MAX  v(Vout)
+    meas tran vref_min   MIN  v(Vref)
+    meas tran vref_max   MAX  v(Vref)
+
+    echo $corner $tval $cout 350 $&vout_final $&vref_final $&vout_min $&vout_max $&vref_min $&vref_max >> $coutfixedfile
+  end
+end
+
+quit
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  DEV_OPAMP.sym # of pins=5
+** sym_path: /opt/eda/share/xschem/xschem_library/devices/DEV_OPAMP.sym
+** sch_path: /opt/eda/share/xschem/xschem_library/devices/DEV_OPAMP.sch
+.subckt DEV_OPAMP MINUS PLUS DIFFOUT VCC GND
+*.ipin VCC
+*.opin DIFFOUT
+*.ipin GND
+*.ipin MINUS
+*.ipin PLUS
+XM9 vgn2 vgn1 GND GND sky130_fd_pr__nfet_01v8 L=0.36 W=6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM10 vgn1 vgn1 GND GND sky130_fd_pr__nfet_01v8 L=0.36 W=6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM11 DIFFOUT vgn2 GND GND sky130_fd_pr__nfet_01v8 L=0.36 W=18 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM12 vgpb vgpb VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.72 W=3 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM13 net1 vgpb VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.72 W=30 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM14 DIFFOUT vgpb VCC VCC sky130_fd_pr__pfet_01v8_lvt L=0.72 W=45 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM15 vgn2 PLUS net1 net1 sky130_fd_pr__pfet_01v8_lvt L=0.36 W=36 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM16 vgn1 MINUS net1 net1 sky130_fd_pr__pfet_01v8_lvt L=0.36 W=36 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XC2 net2 vgn2 sky130_fd_pr__cap_mim_m3_1 W=90 L=22.5 MF=1 m=1
+I2 vgpb GND 20u
+XR2 DIFFOUT net2 GND sky130_fd_pr__res_high_po_5p73 L=5.73 mult=1 m=1
+XC1 DIFFOUT GND sky130_fd_pr__cap_mim_m3_1 W=15 L=18 MF=1 m=1
+.ends
+
+.GLOBAL GND
+.end

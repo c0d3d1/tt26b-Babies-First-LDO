@@ -1,0 +1,220 @@
+
+================ LAYOUT ================
+
+--- sky130_fd_pr__nfet_01v8: 3 occurrences ---
+   66: X0                 nodes=['S', 'G', 'D', 'B']
+       params=w=6 l=0.36
+   70: X0                 nodes=['S1', 'G0', 'D0', 'B']
+       params=w=18 l=0.36
+   71: X1                 nodes=['a_101_n1800#', 'G1', 'S1', 'B']
+       params=w=18 l=0.36
+
+--- sky130_fd_pr__pfet_01v8_lvt: 19 occurrences ---
+   79: X0                 nodes=['S', 'G', 'D', 'B']
+       params=w=3 l=0.72
+   84: X0                 nodes=['D4', 'G3', 'S3', 'B']
+       params=w=30 l=0.72
+   85: X1                 nodes=['D6', 'G5', 'S5', 'B']
+       params=w=30 l=0.72
+   86: X2                 nodes=['S3', 'G2', 'D2', 'B']
+       params=w=30 l=0.72
+   87: X3                 nodes=['S7', 'G6', 'D6', 'B']
+       params=w=30 l=0.72
+   88: X4                 nodes=['D2', 'G1', 'S1', 'B']
+       params=w=30 l=0.72
+   89: X5                 nodes=['S5', 'G4', 'D4', 'B']
+       params=w=30 l=0.72
+   90: X6                 nodes=['a_779_n3000#', 'G7', 'S7', 'B']
+       params=w=30 l=0.72
+   91: X7                 nodes=['S1', 'G0', 'D0', 'B']
+       params=w=30 l=0.72
+   96: X0                 nodes=['D2', 'G1', 'S1', 'B']
+       params=w=45 l=0.72
+   97: X1                 nodes=['a_577_n4500#', 'G5', 'S5', 'B']
+       params=w=45 l=0.72
+   98: X2                 nodes=['S1', 'G0', 'D0', 'B']
+       params=w=45 l=0.72
+   99: X3                 nodes=['D4', 'G3', 'S3', 'B']
+       params=w=45 l=0.72
+  100: X4                 nodes=['S3', 'G2', 'D2', 'B']
+       params=w=45 l=0.72
+  101: X5                 nodes=['S5', 'G4', 'D4', 'B']
+       params=w=45 l=0.72
+  106: X0                 nodes=['S1', 'G0', 'D0', 'B']
+       params=w=36 l=0.36
+  107: X1                 nodes=['S3', 'G2', 'D2', 'B']
+       params=w=36 l=0.36
+  108: X2                 nodes=['D2', 'G1', 'S1', 'B']
+       params=w=36 l=0.36
+  109: X3                 nodes=['a_231_n3600#', 'G3', 'S3', 'B']
+       params=w=36 l=0.36
+
+--- sky130_fd_pr__pfet_01v8_hvt: 1 occurrences ---
+  117: X0                 nodes=['S', 'G', 'D', 'B']
+       params=w=1.8 l=0.36
+
+--- sky130_fd_pr__pfet_01v8: 16 occurrences ---
+    5: X0                 nodes=['D2', 'G1', 'S1', 'B']
+       params=w=88 l=0.18
+    6: X1                 nodes=['S1', 'G0', 'D0', 'B']
+       params=w=88 l=0.18
+    7: X2                 nodes=['D10', 'G9', 'S9', 'B']
+       params=w=88 l=0.18
+    8: X3                 nodes=['S5', 'G4', 'D4', 'B']
+       params=w=88 l=0.18
+    9: X4                 nodes=['S11', 'G10', 'D10', 'B']
+       params=w=88 l=0.18
+   10: X5                 nodes=['D6', 'G5', 'S5', 'B']
+       params=w=88 l=0.18
+   11: X6                 nodes=['a_546_n8800#', 'G11', 'S11', 'B']
+       params=w=88 l=0.18
+   12: X7                 nodes=['D4', 'G3', 'S3', 'B']
+       params=w=88 l=0.18
+   13: X8                 nodes=['S3', 'G2', 'D2', 'B']
+       params=w=88 l=0.18
+   14: X9                 nodes=['S7', 'G6', 'D6', 'B']
+       params=w=88 l=0.18
+   15: X10                nodes=['D8', 'G7', 'S7', 'B']
+       params=w=88 l=0.18
+   16: X11                nodes=['S9', 'G8', 'D8', 'B']
+       params=w=88 l=0.18
+   59: X0                 nodes=['D2', 'G1', 'S1', 'B']
+       params=w=30 l=0.36
+   60: X1                 nodes=['a_231_n3000#', 'G3', 'S3', 'B']
+       params=w=30 l=0.36
+   61: X2                 nodes=['S1', 'G0', 'D0', 'B']
+       params=w=30 l=0.36
+   62: X3                 nodes=['S3', 'G2', 'D2', 'B']
+       params=w=30 l=0.36
+
+--- sky130_fd_pr__cap_mim_m3_1: 3 occurrences ---
+  121: X0                 nodes=['C1', 'C2']
+       params=l=15 w=18
+  125: X0                 nodes=['C1', 'C2']
+       params=l=30 w=30
+  126: X1                 nodes=['C1', 'C2']
+       params=l=30 w=30
+
+--- sky130_fd_pr__res_high_po_5p73: 1 occurrences ---
+   43: X0                 nodes=['R1', 'R2', 'B']
+       params=l=5.73
+
+--- sky130_fd_pr__res_high_po_0p69: 5 occurrences ---
+   47: X0                 nodes=['R1', 'R2', 'B']
+       params=l=14.5
+   51: X0                 nodes=['R1', 'R2', 'B']
+       params=l=0.6
+   55: X0                 nodes=['R1', 'R2', 'B']
+       params=l=7.5
+   75: X0                 nodes=['R1', 'R2', 'B']
+       params=l=50.57
+  113: X0                 nodes=['R1', 'R2', 'B']
+       params=l=16.5
+
+--- sky130_fd_pr__pnp_05v5_W3p40L3p40: 1 occurrences ---
+   38: X0                 nodes=['Collector', 'Base', 'Emitter']
+
+--- sky130_fd_pr__rf_pnp_05v5_W3p40L3p40: 10 occurrences ---
+   37: .subckt            nodes=[]
+       params=m=1
+  134: XQ2_1              nodes=['Q2_E', 'GND', 'GND']
+       params=m=1
+  135: XQ2_2              nodes=['Q2_E', 'GND', 'GND']
+       params=m=1
+  137: XQ2_3              nodes=['Q2_E', 'GND', 'Q2_3/Base']
+       params=m=1
+  140: XQ2_4              nodes=['Q2_E', 'GND', 'GND']
+       params=m=1
+  141: XQ1                nodes=['Q1_E', 'GND', 'GND']
+       params=m=1
+  143: XQ2_5              nodes=['Q2_E', 'GND', 'GND']
+       params=m=1
+  148: XQ2_6              nodes=['Q2_E', 'GND', 'GND']
+       params=m=1
+  150: XQ2_7              nodes=['Q2_E', 'GND', 'Q2_7/Base']
+       params=m=1
+  180: XQ2_0              nodes=['Q2_E', 'GND', 'GND']
+       params=m=1
+
+================ SCHEMATIC ================
+
+--- sky130_fd_pr__nfet_01v8: 3 occurrences ---
+   41: XM9                nodes=['vgn2', 'vgn1', 'GND', 'GND']
+       params=L=0.36 W=6 mult=1 m=1
+   43: XM10               nodes=['vgn1', 'vgn1', 'GND', 'GND']
+       params=L=0.36 W=6 mult=1 m=1
+   45: XM11               nodes=['DIFFOUT', 'vgn2', 'GND', 'GND']
+       params=L=0.36 W=18 mult=1 m=1
+
+--- sky130_fd_pr__pfet_01v8_lvt: 7 occurrences ---
+   15: XM13               nodes=['Vref', 'net4', 'Vdd', 'Vdd']
+       params=L=0.36 W=30 mult=1 m=1
+   17: XM1                nodes=['net3', 'net4', 'Vdd', 'Vdd']
+       params=L=0.36 W=30 mult=1 m=1
+   47: XM12               nodes=['ua[1]', 'ua[1]', 'VCC', 'VCC']
+       params=L=0.72 W=3 mult=1 m=1
+   49: XM13               nodes=['net1', 'ua[1]', 'VCC', 'VCC']
+       params=L=0.72 W=30 mult=1 m=1
+   51: XM14               nodes=['DIFFOUT', 'ua[1]', 'VCC', 'VCC']
+       params=L=0.72 W=45 mult=1 m=1
+   53: XM15               nodes=['vgn2', 'PLUS', 'net1', 'net1']
+       params=L=0.36 W=36 mult=1 m=1
+   55: XM16               nodes=['vgn1', 'MINUS', 'net1', 'net1']
+       params=L=0.36 W=36 mult=1 m=1
+
+--- sky130_fd_pr__pfet_01v8_hvt: 1 occurrences ---
+   22: XM3                nodes=['net1', 'net1', 'Vdd', 'Vdd']
+       params=L=0.36 W=1.8 mult=1 m=1
+
+--- sky130_fd_pr__pfet_01v8: 1 occurrences ---
+   20: XM2                nodes=['ua[0]', 'net7', 'Vdd', 'Vdd']
+       params=L=0.18 W=88 mult=1 m=1
+
+--- sky130_fd_pr__cap_mim_m3_1: 2 occurrences ---
+   57: XC2                nodes=['net2', 'vgn2']
+       params=W=90 L=22.5 MF=1 m=1
+   59: XC1                nodes=['DIFFOUT', 'GND']
+       params=W=15 L=18 MF=1 m=1
+
+--- sky130_fd_pr__res_high_po_5p73: 1 occurrences ---
+   58: XR2                nodes=['DIFFOUT', 'net2', 'GND']
+       params=L=5.73 mult=1 m=1
+
+--- sky130_fd_pr__res_high_po_0p69: 5 occurrences ---
+   24: XR8                nodes=['net1', 'net3', 'GND']
+       params=L=15.9 mult=1 m=1
+   25: XR1                nodes=['net2', 'Vref', 'GND']
+       params=L=14.5 mult=1 m=1
+   26: XR2                nodes=['net5', 'net2', 'GND']
+       params=L=0.9 mult=1 m=1
+   27: XR3                nodes=['net6', 'ua[0]', 'GND']
+       params=L=7.4 mult=1 m=1
+   28: XR4                nodes=['GND', 'net6', 'GND']
+       params=L=48 mult=1 m=1
+
+--- sky130_fd_pr__rf_pnp_05v5_W3p40L3p40: 9 occurrences ---
+    5: XQ2[7]             nodes=['GND', 'GND', 'net5']
+       params=m=1 mult=1
+    6: XQ2[6]             nodes=['GND', 'GND', 'net5']
+       params=m=1 mult=1
+    7: XQ2[5]             nodes=['GND', 'GND', 'net5']
+       params=m=1 mult=1
+    8: XQ2[4]             nodes=['GND', 'GND', 'net5']
+       params=m=1 mult=1
+    9: XQ2[3]             nodes=['GND', 'GND', 'net5']
+       params=m=1 mult=1
+   10: XQ2[2]             nodes=['GND', 'GND', 'net5']
+       params=m=1 mult=1
+   11: XQ2[1]             nodes=['GND', 'GND', 'net5']
+       params=m=1 mult=1
+   12: XQ2[0]             nodes=['GND', 'GND', 'net5']
+       params=m=1 mult=1
+   13: XQ1                nodes=['GND', 'GND', 'net1']
+       params=m=1 mult=1
+
+================ COUNT DIFF ================
+sky130_fd_pr__pfet_01v8_lvt                   layout= 19 schematic=  7 diff=+12
+sky130_fd_pr__pfet_01v8                       layout= 16 schematic=  1 diff=+15
+sky130_fd_pr__cap_mim_m3_1                    layout=  3 schematic=  2 diff=+1
+sky130_fd_pr__pnp_05v5_W3p40L3p40             layout=  1 schematic=  0 diff=+1
+sky130_fd_pr__rf_pnp_05v5_W3p40L3p40          layout= 10 schematic=  9 diff=+1

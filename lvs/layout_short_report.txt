@@ -1,0 +1,217 @@
+
+=== HARD SHORTS / SUSPICIOUS DEVICES ===
+MOS_GATE_TIED_TO_D_OR_S sky130_fd_pr__nfet_01v8          Xbg_core_route_all_0/XX1_M10/X0
+    D=VGND  G=bg_core_route_all_0/X1_M9/G  S=bg_core_route_all_0/X1_M9/G  B=VGND
+MOS_GATE_TIED_TO_D_OR_S sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M12/X0
+    D=VDPWR  G=ua[1]  S=ua[1]  B=VDPWR
+MOS_GATE_TIED_TO_D_OR_S sky130_fd_pr__pfet_01v8_hvt      Xbg_core_route_all_0/XM3/X0
+    D=VDPWR  G=bg_core_route_all_0/Q1_E  S=bg_core_route_all_0/Q1_E  B=VDPWR
+MOS_GATE_TIED_TO_D_OR_S sky130_fd_pr__nfet_01v8          Xbg_core_route_all_0/XX2_M10/X0
+    D=VGND  G=Xbg_core_route_all_0/X2_M9/G  S=Xbg_core_route_all_0/X2_M9/G  B=VGND
+MOS_GATE_TIED_TO_D_OR_S sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M12/X0
+    D=VDPWR  G=ua[1]  S=ua[1]  B=VDPWR
+
+=== MIM CAP GROUPS AFTER NET PAIRS ===
+('VGND', 'bg_core_route_all_0/M14_D'):
+    Xbg_core_route_all_0/XX1_C1/X0
+    Xbg_core_route_all_0/XX2_C1/X0
+('bg_core_route_all_0/X1_M9/D', 'bg_core_route_all_0/X1_R2/R2'):
+    Xbg_core_route_all_0/XX1_C2/X0
+    Xbg_core_route_all_0/XX1_C2/X1
+('bg_core_route_all_0/X2_M9/D', 'bg_core_route_all_0/X2_R2/R2'):
+    Xbg_core_route_all_0/XX2_C2/X0
+    Xbg_core_route_all_0/XX2_C2/X1
+
+=== LVT PMOS MERGE GROUPS ===
+D/S=('VDPWR', 'bg_core_route_all_0/M14_D')  G=ua[1]  B=VDPWR   count=12
+    Xbg_core_route_all_0/XX1_M14/X0
+    Xbg_core_route_all_0/XX1_M14/X1
+    Xbg_core_route_all_0/XX1_M14/X2
+    Xbg_core_route_all_0/XX1_M14/X3
+    Xbg_core_route_all_0/XX1_M14/X4
+    Xbg_core_route_all_0/XX1_M14/X5
+    Xbg_core_route_all_0/XX2_M14/X0
+    Xbg_core_route_all_0/XX2_M14/X1
+    Xbg_core_route_all_0/XX2_M14/X2
+    Xbg_core_route_all_0/XX2_M14/X3
+    Xbg_core_route_all_0/XX2_M14/X4
+    Xbg_core_route_all_0/XX2_M14/X5
+D/S=('VDPWR', 'bg_core_route_all_0/X1_M16/B')  G=ua[1]  B=VDPWR   count=8
+    Xbg_core_route_all_0/XX1_M13/X0
+    Xbg_core_route_all_0/XX1_M13/X1
+    Xbg_core_route_all_0/XX1_M13/X2
+    Xbg_core_route_all_0/XX1_M13/X3
+    Xbg_core_route_all_0/XX1_M13/X4
+    Xbg_core_route_all_0/XX1_M13/X5
+    Xbg_core_route_all_0/XX1_M13/X6
+    Xbg_core_route_all_0/XX1_M13/X7
+D/S=('VDPWR', 'bg_core_route_all_0/X2_M16/B')  G=ua[1]  B=VDPWR   count=8
+    Xbg_core_route_all_0/XX2_M13/X0
+    Xbg_core_route_all_0/XX2_M13/X1
+    Xbg_core_route_all_0/XX2_M13/X2
+    Xbg_core_route_all_0/XX2_M13/X3
+    Xbg_core_route_all_0/XX2_M13/X4
+    Xbg_core_route_all_0/XX2_M13/X5
+    Xbg_core_route_all_0/XX2_M13/X6
+    Xbg_core_route_all_0/XX2_M13/X7
+D/S=('VDPWR', 'Xbg_core_route_all_0/R8_CONN')  G=bg_core_route_all_0/M14_D  B=VDPWR   count=4
+    Xbg_core_route_all_0/XM1/X0
+    Xbg_core_route_all_0/XM1/X1
+    Xbg_core_route_all_0/XM1/X2
+    Xbg_core_route_all_0/XM1/X3
+D/S=('VDPWR', 'bg_core_route_all_0/Vref')  G=bg_core_route_all_0/M14_D  B=VDPWR   count=4
+    Xbg_core_route_all_0/XM13/X0
+    Xbg_core_route_all_0/XM13/X1
+    Xbg_core_route_all_0/XM13/X2
+    Xbg_core_route_all_0/XM13/X3
+D/S=('Xbg_core_route_all_0/X2_M9/G', 'bg_core_route_all_0/X2_M16/B')  G=bg_core_route_all_0/Vref  B=bg_core_route_all_0/X2_M16/B   count=4
+    Xbg_core_route_all_0/XX2_M16/X0
+    Xbg_core_route_all_0/XX2_M16/X1
+    Xbg_core_route_all_0/XX2_M16/X2
+    Xbg_core_route_all_0/XX2_M16/X3
+D/S=('bg_core_route_all_0/X1_M16/B', 'bg_core_route_all_0/X1_M9/D')  G=bg_core_route_all_0/R2/R1  B=bg_core_route_all_0/X1_M16/B   count=4
+    Xbg_core_route_all_0/XX1_M15/X0
+    Xbg_core_route_all_0/XX1_M15/X1
+    Xbg_core_route_all_0/XX1_M15/X2
+    Xbg_core_route_all_0/XX1_M15/X3
+D/S=('bg_core_route_all_0/X1_M16/B', 'bg_core_route_all_0/X1_M9/G')  G=bg_core_route_all_0/Q1_E  B=bg_core_route_all_0/X1_M16/B   count=4
+    Xbg_core_route_all_0/XX1_M16/X0
+    Xbg_core_route_all_0/XX1_M16/X1
+    Xbg_core_route_all_0/XX1_M16/X2
+    Xbg_core_route_all_0/XX1_M16/X3
+D/S=('bg_core_route_all_0/X2_M16/B', 'bg_core_route_all_0/X2_M9/D')  G=Xbg_core_route_all_0/R4/R2  B=bg_core_route_all_0/X2_M16/B   count=4
+    Xbg_core_route_all_0/XX2_M15/X0
+    Xbg_core_route_all_0/XX2_M15/X1
+    Xbg_core_route_all_0/XX2_M15/X2
+    Xbg_core_route_all_0/XX2_M15/X3
+D/S=('VDPWR', 'ua[1]')  G=ua[1]  B=VDPWR   count=2
+    Xbg_core_route_all_0/XX1_M12/X0
+    Xbg_core_route_all_0/XX2_M12/X0
+
+=== DEVICES TOUCHING ua[1] ===
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M12/X0
+    nodes=['VDPWR', 'ua[1]', 'ua[1]', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X0
+    nodes=['bg_core_route_all_0/X1_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X1
+    nodes=['bg_core_route_all_0/X1_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X2
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X1_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X3
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X1_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X4
+    nodes=['bg_core_route_all_0/X1_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X5
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X1_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X6
+    nodes=['bg_core_route_all_0/X1_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X7
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X1_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M14/X0
+    nodes=['bg_core_route_all_0/M14_D', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M14/X1
+    nodes=['bg_core_route_all_0/M14_D', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M14/X2
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/M14_D', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M14/X3
+    nodes=['bg_core_route_all_0/M14_D', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M14/X4
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/M14_D', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M14/X5
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/M14_D', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M12/X0
+    nodes=['VDPWR', 'ua[1]', 'ua[1]', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X0
+    nodes=['bg_core_route_all_0/X2_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X1
+    nodes=['bg_core_route_all_0/X2_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X2
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X2_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X3
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X2_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X4
+    nodes=['bg_core_route_all_0/X2_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X5
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X2_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X6
+    nodes=['bg_core_route_all_0/X2_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X7
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X2_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M14/X0
+    nodes=['bg_core_route_all_0/M14_D', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M14/X1
+    nodes=['bg_core_route_all_0/M14_D', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M14/X2
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/M14_D', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M14/X3
+    nodes=['bg_core_route_all_0/M14_D', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M14/X4
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/M14_D', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M14/X5
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/M14_D', 'VDPWR']
+
+=== DEVICES TOUCHING X1_M16/B or X2_M16/B ===
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X0
+    nodes=['bg_core_route_all_0/X1_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X1
+    nodes=['bg_core_route_all_0/X1_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X2
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X1_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X3
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X1_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X4
+    nodes=['bg_core_route_all_0/X1_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X5
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X1_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X6
+    nodes=['bg_core_route_all_0/X1_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M13/X7
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X1_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M15/X0
+    nodes=['bg_core_route_all_0/X1_M16/B', 'bg_core_route_all_0/R2/R1', 'bg_core_route_all_0/X1_M9/D', 'bg_core_route_all_0/X1_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M15/X1
+    nodes=['bg_core_route_all_0/X1_M16/B', 'bg_core_route_all_0/R2/R1', 'bg_core_route_all_0/X1_M9/D', 'bg_core_route_all_0/X1_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M15/X2
+    nodes=['bg_core_route_all_0/X1_M9/D', 'bg_core_route_all_0/R2/R1', 'bg_core_route_all_0/X1_M16/B', 'bg_core_route_all_0/X1_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M15/X3
+    nodes=['bg_core_route_all_0/X1_M9/D', 'bg_core_route_all_0/R2/R1', 'bg_core_route_all_0/X1_M16/B', 'bg_core_route_all_0/X1_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M16/X0
+    nodes=['bg_core_route_all_0/X1_M16/B', 'bg_core_route_all_0/Q1_E', 'bg_core_route_all_0/X1_M9/G', 'bg_core_route_all_0/X1_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M16/X1
+    nodes=['bg_core_route_all_0/X1_M16/B', 'bg_core_route_all_0/Q1_E', 'bg_core_route_all_0/X1_M9/G', 'bg_core_route_all_0/X1_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M16/X2
+    nodes=['bg_core_route_all_0/X1_M9/G', 'bg_core_route_all_0/Q1_E', 'bg_core_route_all_0/X1_M16/B', 'bg_core_route_all_0/X1_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX1_M16/X3
+    nodes=['bg_core_route_all_0/X1_M9/G', 'bg_core_route_all_0/Q1_E', 'bg_core_route_all_0/X1_M16/B', 'bg_core_route_all_0/X1_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X0
+    nodes=['bg_core_route_all_0/X2_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X1
+    nodes=['bg_core_route_all_0/X2_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X2
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X2_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X3
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X2_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X4
+    nodes=['bg_core_route_all_0/X2_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X5
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X2_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X6
+    nodes=['bg_core_route_all_0/X2_M16/B', 'ua[1]', 'VDPWR', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M13/X7
+    nodes=['VDPWR', 'ua[1]', 'bg_core_route_all_0/X2_M16/B', 'VDPWR']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M15/X0
+    nodes=['bg_core_route_all_0/X2_M16/B', 'Xbg_core_route_all_0/R4/R2', 'bg_core_route_all_0/X2_M9/D', 'bg_core_route_all_0/X2_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M15/X1
+    nodes=['bg_core_route_all_0/X2_M16/B', 'Xbg_core_route_all_0/R4/R2', 'bg_core_route_all_0/X2_M9/D', 'bg_core_route_all_0/X2_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M15/X2
+    nodes=['bg_core_route_all_0/X2_M9/D', 'Xbg_core_route_all_0/R4/R2', 'bg_core_route_all_0/X2_M16/B', 'bg_core_route_all_0/X2_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M15/X3
+    nodes=['bg_core_route_all_0/X2_M9/D', 'Xbg_core_route_all_0/R4/R2', 'bg_core_route_all_0/X2_M16/B', 'bg_core_route_all_0/X2_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M16/X0
+    nodes=['bg_core_route_all_0/X2_M16/B', 'bg_core_route_all_0/Vref', 'Xbg_core_route_all_0/X2_M9/G', 'bg_core_route_all_0/X2_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M16/X1
+    nodes=['bg_core_route_all_0/X2_M16/B', 'bg_core_route_all_0/Vref', 'Xbg_core_route_all_0/X2_M9/G', 'bg_core_route_all_0/X2_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M16/X2
+    nodes=['Xbg_core_route_all_0/X2_M9/G', 'bg_core_route_all_0/Vref', 'bg_core_route_all_0/X2_M16/B', 'bg_core_route_all_0/X2_M16/B']
+sky130_fd_pr__pfet_01v8_lvt      Xbg_core_route_all_0/XX2_M16/X3
+    nodes=['Xbg_core_route_all_0/X2_M9/G', 'bg_core_route_all_0/Vref', 'bg_core_route_all_0/X2_M16/B', 'bg_core_route_all_0/X2_M16/B']

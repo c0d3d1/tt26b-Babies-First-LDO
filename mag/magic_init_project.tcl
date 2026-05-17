@@ -14,8 +14,8 @@ set POWER_STRIPE_WIDTH 2um                 ;# The minimum width is 1.2um
 
 # Power stripes: NET name, x position. You can add additional power stripes for each net, as needed.
 set POWER_STRIPES {
-    VDPWR 1um
-    VGND  4um
+    VDPWR 120um
+    VGND  35um
 }
 # If you use the 3v3 template, uncomment the line below:
 #lappend POWER_STRIPES VAPWR 7um

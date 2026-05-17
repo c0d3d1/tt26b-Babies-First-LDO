@@ -1,0 +1,300 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pnp_05v5_W3p40L3p40 and Circuit 2 cell sky130_fd_pr__pnp_05v5_W3p40L3p40 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pnp_05v5_W3p40L3p40 and sky130_fd_pr__pnp_05v5_W3p40L3p40 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_high_po_5p73 and Circuit 2 cell sky130_fd_pr__res_high_po_5p73 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_high_po_5p73 and sky130_fd_pr__res_high_po_5p73 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_high_po_0p69 and Circuit 2 cell sky130_fd_pr__res_high_po_0p69 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_high_po_0p69 and sky130_fd_pr__res_high_po_0p69 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell pass_pmos in circuit tt_um_c0d3d1_ldo (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_PNJ9ZM in circuit tt_um_c0d3d1_ldo (0)(1 instance)
+Flattening unmatched subcell bg_core_route_all in circuit tt_um_c0d3d1_ldo (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 in circuit tt_um_c0d3d1_ldo (0)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_5p73_4CGAJ9 in circuit tt_um_c0d3d1_ldo (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p69_9PPSX2 in circuit tt_um_c0d3d1_ldo (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p69_S7B22K in circuit tt_um_c0d3d1_ldo (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p69_CEZYCS in circuit tt_um_c0d3d1_ldo (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_EZF7CS in circuit tt_um_c0d3d1_ldo (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_Y2657Z in circuit tt_um_c0d3d1_ldo (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_W965F3 in circuit tt_um_c0d3d1_ldo (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p69_592D6U in circuit tt_um_c0d3d1_ldo (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_ZPPFMQ in circuit tt_um_c0d3d1_ldo (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_D7EHUM in circuit tt_um_c0d3d1_ldo (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_Z7GDFQ in circuit tt_um_c0d3d1_ldo (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_EH7T5T in circuit tt_um_c0d3d1_ldo (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_hvt_DPBHHE in circuit tt_um_c0d3d1_ldo (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p69_RMHY26 in circuit tt_um_c0d3d1_ldo (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_STSYNP in circuit tt_um_c0d3d1_ldo (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_QP9YHK in circuit tt_um_c0d3d1_ldo (0)(2 instances)
+Flattening unmatched subcell DEV_OPAMP in circuit tt_um_c0d3d1_ldo (1)(2 instances)
+
+Cell tt_um_c0d3d1_ldo (0) disconnected node: clk
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ena
+Cell tt_um_c0d3d1_ldo (0) disconnected node: rst_n
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ua[2]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ua[3]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ua[4]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ua[5]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ua[6]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ua[7]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[0]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[1]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[2]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[3]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[4]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[5]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[6]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[7]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[0]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[1]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[2]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[3]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[4]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[5]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[6]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[7]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[0]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[1]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[2]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[3]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[4]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[5]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[6]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[7]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[0]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[1]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[2]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[3]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[4]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[5]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[6]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[7]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[0]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[1]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[2]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[3]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[4]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[5]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[6]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[7]
+Cell tt_um_c0d3d1_ldo (1) disconnected node: clk
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ena
+Cell tt_um_c0d3d1_ldo (1) disconnected node: rst_n
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ua[2]
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ua[3]
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ua[4]
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ua[5]
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ua[6]
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ua[7]
+Class tt_um_c0d3d1_ldo (0):  Merged 65 parallel devices.
+Class tt_um_c0d3d1_ldo (1):  Merged 8 parallel devices.
+Cell tt_um_c0d3d1_ldo (0) disconnected node: clk
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ena
+Cell tt_um_c0d3d1_ldo (0) disconnected node: rst_n
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ua[2]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ua[3]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ua[4]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ua[5]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ua[6]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ua[7]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[0]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[1]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[2]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[3]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[4]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[5]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[6]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: ui_in[7]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[0]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[1]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[2]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[3]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[4]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[5]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[6]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_in[7]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[0]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[1]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[2]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[3]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[4]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[5]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[6]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_oe[7]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[0]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[1]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[2]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[3]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[4]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[5]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[6]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uio_out[7]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[0]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[1]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[2]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[3]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[4]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[5]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[6]
+Cell tt_um_c0d3d1_ldo (0) disconnected node: uo_out[7]
+Cell tt_um_c0d3d1_ldo (1) disconnected node: clk
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ena
+Cell tt_um_c0d3d1_ldo (1) disconnected node: rst_n
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ua[2]
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ua[3]
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ua[4]
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ua[5]
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ua[6]
+Cell tt_um_c0d3d1_ldo (1) disconnected node: ua[7]
+Subcircuit summary:
+Circuit 1: tt_um_c0d3d1_ldo                |Circuit 2: tt_um_c0d3d1_ldo                
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (12->1)            |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__pnp_05v5_W3p40L3p40 (9->2)   |sky130_fd_pr__pnp_05v5_W3p40L3p40 (9->2)   
+sky130_fd_pr__res_high_po_5p73 (2)         |sky130_fd_pr__res_high_po_5p73 (2)         
+sky130_fd_pr__res_high_po_0p69 (5)         |sky130_fd_pr__res_high_po_0p69 (5)         
+sky130_fd_pr__pfet_01v8_lvt (54->11)       |sky130_fd_pr__pfet_01v8_lvt (12->11)       
+sky130_fd_pr__nfet_01v8 (8->6)             |sky130_fd_pr__nfet_01v8 (6)                
+sky130_fd_pr__pfet_01v8_hvt (1)            |sky130_fd_pr__pfet_01v8_hvt (1)            
+sky130_fd_pr__cap_mim_m3_1 (6->4)          |sky130_fd_pr__cap_mim_m3_1 (4)             
+Number of devices: 32                      |Number of devices: 32                      
+Number of nets: 20                         |Number of nets: 20                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port and property errors.
+bg_core_route_all_0/sky130_fd_pr__cap_mim_m3_1_STSYNP:X1_C1/sky130_fd_pr__cap_mim_m3_1:0 vs. DEV_OPAMP:6/sky130_fd_pr__cap_mim_m3_1:C1:
+ w circuit1: 18   circuit2: 15   (delta=18.2%, cutoff=1%)
+ l circuit1: 15   circuit2: 18   (delta=18.2%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__cap_mim_m3_1_QP9YHK:X2_C2/sky130_fd_pr__cap_mim_m3_1:0 vs. DEV_OPAMP:2/sky130_fd_pr__cap_mim_m3_1:C2:
+ w circuit1: 30   circuit2: 90   (delta=100%, cutoff=1%)
+ l circuit1: 30   circuit2: 22.5   (delta=28.6%, cutoff=1%)
+ M circuit1: 2   circuit2: 1   (delta=1, cutoff=0)
+bg_core_route_all_0/sky130_fd_pr__cap_mim_m3_1_QP9YHK:X1_C2/sky130_fd_pr__cap_mim_m3_1:0 vs. DEV_OPAMP:6/sky130_fd_pr__cap_mim_m3_1:C2:
+ w circuit1: 30   circuit2: 90   (delta=100%, cutoff=1%)
+ l circuit1: 30   circuit2: 22.5   (delta=28.6%, cutoff=1%)
+ M circuit1: 2   circuit2: 1   (delta=1, cutoff=0)
+bg_core_route_all_0/sky130_fd_pr__cap_mim_m3_1_STSYNP:X2_C1/sky130_fd_pr__cap_mim_m3_1:0 vs. DEV_OPAMP:2/sky130_fd_pr__cap_mim_m3_1:C1:
+ w circuit1: 18   circuit2: 15   (delta=18.2%, cutoff=1%)
+ l circuit1: 15   circuit2: 18   (delta=18.2%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__nfet_01v8_W965F3:X1_M11/sky130_fd_pr__nfet_01v8:0 vs. DEV_OPAMP:6/sky130_fd_pr__nfet_01v8:M11:
+ w circuit1: 36   circuit2: 18   (delta=66.7%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__nfet_01v8_W965F3:X2_M11/sky130_fd_pr__nfet_01v8:0 vs. DEV_OPAMP:2/sky130_fd_pr__nfet_01v8:M11:
+ w circuit1: 36   circuit2: 18   (delta=66.7%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__pfet_01v8_lvt_Z7GDFQ:X1_M14/sky130_fd_pr__pfet_01v8_lvt:0 vs. DEV_OPAMP:6/sky130_fd_pr__pfet_01v8_lvt:M14:
+ w circuit1: 270   circuit2: 45   (delta=143%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__pfet_01v8_lvt_EH7T5T:X1_M16/sky130_fd_pr__pfet_01v8_lvt:0 vs. DEV_OPAMP:6/sky130_fd_pr__pfet_01v8_lvt:M16:
+ w circuit1: 144   circuit2: 36   (delta=120%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__pfet_01v8_lvt_EZF7CS:M13/sky130_fd_pr__pfet_01v8_lvt:0 vs. sky130_fd_pr__pfet_01v8_lvt:M13:
+ w circuit1: 120   circuit2: 30   (delta=120%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__pfet_01v8_lvt_EZF7CS:M1/sky130_fd_pr__pfet_01v8_lvt:0 vs. sky130_fd_pr__pfet_01v8_lvt:M1:
+ w circuit1: 120   circuit2: 30   (delta=120%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__pfet_01v8_lvt_Z7GDFQ:X2_M14/sky130_fd_pr__pfet_01v8_lvt:0 vs. DEV_OPAMP:2/sky130_fd_pr__pfet_01v8_lvt:M14:
+ w circuit1: 270   circuit2: 45   (delta=143%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__pfet_01v8_lvt_D7EHUM:X2_M13/sky130_fd_pr__pfet_01v8_lvt:0 vs. DEV_OPAMP:2/sky130_fd_pr__pfet_01v8_lvt:M13:
+ w circuit1: 240   circuit2: 30   (delta=156%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__pfet_01v8_lvt_D7EHUM:X1_M13/sky130_fd_pr__pfet_01v8_lvt:0 vs. DEV_OPAMP:6/sky130_fd_pr__pfet_01v8_lvt:M13:
+ w circuit1: 240   circuit2: 30   (delta=156%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__pfet_01v8_lvt_EH7T5T:X2_M16/sky130_fd_pr__pfet_01v8_lvt:0 vs. DEV_OPAMP:2/sky130_fd_pr__pfet_01v8_lvt:M16:
+ w circuit1: 144   circuit2: 36   (delta=120%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__pfet_01v8_lvt_EH7T5T:X2_M15/sky130_fd_pr__pfet_01v8_lvt:0 vs. DEV_OPAMP:2/sky130_fd_pr__pfet_01v8_lvt:M15:
+ w circuit1: 144   circuit2: 36   (delta=120%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__pfet_01v8_lvt_EH7T5T:X1_M15/sky130_fd_pr__pfet_01v8_lvt:0 vs. DEV_OPAMP:6/sky130_fd_pr__pfet_01v8_lvt:M15:
+ w circuit1: 144   circuit2: 36   (delta=120%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__res_high_po_0p69_RMHY26:R8/sky130_fd_pr__res_high_po_0p69:0 vs. sky130_fd_pr__res_high_po_0p69:R8:
+ l circuit1: 16.5   circuit2: 15.9   (delta=3.7%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__res_high_po_0p69_CEZYCS:R3/sky130_fd_pr__res_high_po_0p69:0 vs. sky130_fd_pr__res_high_po_0p69:R3:
+ l circuit1: 7.5   circuit2: 7.4   (delta=1.34%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__res_high_po_0p69_S7B22K:R2/sky130_fd_pr__res_high_po_0p69:0 vs. sky130_fd_pr__res_high_po_0p69:R2:
+ l circuit1: 0.6   circuit2: 0.9   (delta=40%, cutoff=1%)
+bg_core_route_all_0/sky130_fd_pr__res_high_po_0p69_592D6U:R4/sky130_fd_pr__res_high_po_0p69:0 vs. sky130_fd_pr__res_high_po_0p69:R4:
+ l circuit1: 50.57   circuit2: 48   (delta=5.21%, cutoff=1%)
+pass_pmos_0//sky130_fd_pr__pfet_01v8_PNJ9ZM_0/sky130_fd_pr__pfet_01v8:0 vs. sky130_fd_pr__pfet_01v8:M2:
+ w circuit1: 1056   circuit2: 88   (delta=169%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: tt_um_c0d3d1_ldo                |Circuit 2: tt_um_c0d3d1_ldo                
+-------------------------------------------|-------------------------------------------
+ua[1]                                      |ua[1]                                      
+VGND                                       |(no pin, node is VGND)                     
+ua[0]                                      |ua[0]                                      
+VDPWR                                      |(no pin, node is VDPWR)                    
+clk                                        |clk                                        
+ena                                        |ena                                        
+rst_n                                      |rst_n                                      
+ua[2]                                      |ua[2]                                      
+ua[3]                                      |ua[3]                                      
+ua[4]                                      |ua[4]                                      
+ua[5]                                      |ua[5]                                      
+ua[6]                                      |ua[6]                                      
+ua[7]                                      |ua[7]                                      
+ui_in[0]                                   |(no matching pin)                          
+ui_in[1]                                   |(no matching pin)                          
+ui_in[2]                                   |(no matching pin)                          
+ui_in[3]                                   |(no matching pin)                          
+ui_in[4]                                   |(no matching pin)                          
+ui_in[5]                                   |(no matching pin)                          
+ui_in[6]                                   |(no matching pin)                          
+ui_in[7]                                   |(no matching pin)                          
+uio_in[0]                                  |(no matching pin)                          
+uio_in[1]                                  |(no matching pin)                          
+uio_in[2]                                  |(no matching pin)                          
+uio_in[3]                                  |(no matching pin)                          
+uio_in[4]                                  |(no matching pin)                          
+uio_in[5]                                  |(no matching pin)                          
+uio_in[6]                                  |(no matching pin)                          
+uio_in[7]                                  |(no matching pin)                          
+uio_oe[0]                                  |(no matching pin)                          
+uio_oe[1]                                  |(no matching pin)                          
+uio_oe[2]                                  |(no matching pin)                          
+uio_oe[3]                                  |(no matching pin)                          
+uio_oe[4]                                  |(no matching pin)                          
+uio_oe[5]                                  |(no matching pin)                          
+uio_oe[6]                                  |(no matching pin)                          
+uio_oe[7]                                  |(no matching pin)                          
+uio_out[0]                                 |(no matching pin)                          
+uio_out[1]                                 |(no matching pin)                          
+uio_out[2]                                 |(no matching pin)                          
+uio_out[3]                                 |(no matching pin)                          
+uio_out[4]                                 |(no matching pin)                          
+uio_out[5]                                 |(no matching pin)                          
+uio_out[6]                                 |(no matching pin)                          
+uio_out[7]                                 |(no matching pin)                          
+uo_out[0]                                  |(no matching pin)                          
+uo_out[1]                                  |(no matching pin)                          
+uo_out[2]                                  |(no matching pin)                          
+uo_out[3]                                  |(no matching pin)                          
+uo_out[4]                                  |(no matching pin)                          
+uo_out[5]                                  |(no matching pin)                          
+uo_out[6]                                  |(no matching pin)                          
+uo_out[7]                                  |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for tt_um_c0d3d1_ldo and tt_um_c0d3d1_ldo altered to match.
+Device classes tt_um_c0d3d1_ldo and tt_um_c0d3d1_ldo are equivalent.
+
+Final result: Top level cell failed pin matching.
+
+The following cells had property errors:
+ tt_um_c0d3d1_ldo
