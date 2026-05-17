@@ -57,7 +57,7 @@ pinout:
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
   ua[0]: "Vout"
   ua[1]: "Iref"
-  ua[2]: "Vref"
+  ua[2]: ""
   ua[3]: ""
   ua[4]: ""
   ua[5]: ""
