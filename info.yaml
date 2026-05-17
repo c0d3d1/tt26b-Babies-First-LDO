@@ -3,7 +3,7 @@ project:
   title:        "tt26b-Babies-First-LDO"      # Project title
   author:       "Devan Comes"      # Your name
   discord:      "c0d3d1"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Low current, 1.8->1.4V LDO"      # One line description of what your project does
+  description:  "Low current, 1.8 to 1.4V LDO"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
