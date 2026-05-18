@@ -1,0 +1,74 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1779066585
+<< nwell >>
+rect -200 -471 200 471
+<< pdiff >>
+rect -42 301 42 313
+rect -42 267 -30 301
+rect 30 267 42 301
+rect -42 210 42 267
+rect -42 -267 42 -210
+rect -42 -301 -30 -267
+rect 30 -301 42 -267
+rect -42 -313 42 -301
+<< pdiffc >>
+rect -30 267 30 301
+rect -30 -301 30 -267
+<< nsubdiff >>
+rect -164 401 -68 435
+rect 68 401 164 435
+rect -164 339 -130 401
+rect 130 339 164 401
+rect -164 -401 -130 -339
+rect 130 -401 164 -339
+rect -164 -435 -68 -401
+rect 68 -435 164 -401
+<< nsubdiffcont >>
+rect -68 401 68 435
+rect -164 -339 -130 339
+rect 130 -339 164 339
+rect -68 -435 68 -401
+<< pdiffres >>
+rect -42 -210 42 210
+<< locali >>
+rect -164 401 -68 435
+rect 68 401 164 435
+rect -164 339 -130 401
+rect 130 339 164 401
+rect -46 267 -30 301
+rect 30 267 46 301
+rect -46 -301 -30 -267
+rect 30 -301 46 -267
+rect -164 -401 -130 -339
+rect 130 -401 164 -339
+rect -164 -435 -68 -401
+rect 68 -435 164 -401
+<< viali >>
+rect -30 267 30 301
+rect -30 227 30 267
+rect -30 -267 30 -227
+rect -30 -301 30 -267
+<< metal1 >>
+rect -36 301 36 313
+rect -36 227 -30 301
+rect 30 227 36 301
+rect -36 215 36 227
+rect -36 -227 36 -215
+rect -36 -301 -30 -227
+rect 30 -301 36 -227
+rect -36 -313 36 -301
+<< labels >>
+rlabel nsubdiffcont 0 -418 0 -418 0 B
+port 1 nsew
+rlabel pdiffc 0 284 0 284 0 R1
+port 2 nsew
+rlabel pdiffc 0 -284 0 -284 0 R2
+port 3 nsew
+<< properties >>
+string FIXED_BBOX -147 -418 147 418
+string gencell sky130_fd_pr__res_generic_pd
+string library sky130
+string parameters w 0.42 l 2.10 m 1 nx 1 wmin 0.42 lmin 2.10 class resistor rho 197 val 1.034k dummy 0 dw 0.02 term 0.0 sterm 0.0 caplen 0.60 snake 0 guard 1 glc 1 grc 1 gtc 1 gbc 1 roverlap 0 endcov 100 full_metal 1 vias 1 doports 1 viagb 0 viagt 0 viagl 0 viagr 0
+<< end >>
