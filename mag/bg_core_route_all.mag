@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1779084254
+timestamp 1779085331
 << nwell >>
 rect 3182 25830 3996 25844
 rect 3182 25542 3996 25572
@@ -31,6 +31,7 @@ rect 3472 9774 3808 9802
 rect 5977 7411 6006 7427
 rect 2518 2020 3112 2124
 rect 4140 2022 4734 2126
+rect 7696 1624 8004 1716
 rect 3480 1598 3690 1608
 rect 3480 1548 3608 1598
 rect 3302 1544 3608 1548
@@ -50,11 +51,11 @@ rect 5662 275 5759 501
 rect 5703 256 5759 275
 rect 7060 266 7159 501
 rect 7553 438 7655 494
-rect 8953 326 9062 501
-rect 8951 291 9062 326
+rect 9031 338 9140 513
+rect 9029 303 9140 338
 rect 7103 252 7159 266
-rect 8953 256 9062 291
-rect 8953 233 9009 256
+rect 9031 268 9140 303
+rect 9031 245 9087 268
 rect 3717 91 7733 163
 rect 4621 -291 4680 -192
 rect 4579 -355 4680 -296
@@ -771,11 +772,11 @@ rect 6472 -594 6764 -524
 rect 6077 -600 6389 -594
 rect 6471 -600 6764 -594
 rect 6077 -629 6764 -600
-use sky130_fd_pr__pfet_01v8_lvt_EZF7CS  M1
+use sky130_fd_pr__pfet_01v8_lvt_EZF7CS  M1 ~/tt26b-Babies-First-LDO/mag
 timestamp 1778996528
 transform -1 0 681 0 -1 6325
 box -427 -3219 427 3219
-use sky130_fd_pr__pfet_01v8_hvt_DPBHHE  M3
+use sky130_fd_pr__pfet_01v8_hvt_DPBHHE  M3 ~/tt26b-Babies-First-LDO/mag
 timestamp 1777445693
 transform -1 0 1073 0 -1 1114
 box -232 -399 232 399
@@ -801,7 +802,7 @@ transform 1 0 6463 0 1 412
 box 0 0 1340 1340
 use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  Q2_3
 timestamp 1767376183
-transform 1 0 7863 0 1 412
+transform 1 0 7941 0 1 424
 box 0 0 1340 1340
 use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  Q2_4
 timestamp 1767376183
@@ -817,37 +818,37 @@ transform 1 0 6463 0 1 -988
 box 0 0 1340 1340
 use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  Q2_7
 timestamp 1767376183
-transform 1 0 7863 0 1 -988
+transform 1 0 7941 0 1 -976
 box 0 0 1340 1340
-use sky130_fd_pr__res_xhigh_po_1p41_G8RHRS  R1
+use sky130_fd_pr__res_xhigh_po_1p41_G8RHRS  R1 ~/tt26b-Babies-First-LDO/mag
 timestamp 1779066585
 transform 1 0 5665 0 1 5936
 box -307 -1094 307 1094
-use sky130_fd_pr__res_high_po_1p41_TTZ92X  R2
+use sky130_fd_pr__res_high_po_1p41_TTZ92X  R2 ~/tt26b-Babies-First-LDO/mag
 timestamp 1779066585
 transform 1 0 5653 0 1 2741
 box -307 -827 307 827
-use sky130_fd_pr__res_xhigh_po_1p41_9D57HL  R3
+use sky130_fd_pr__res_xhigh_po_1p41_9D57HL  R3 ~/tt26b-Babies-First-LDO/mag
 timestamp 1779066585
 transform 1 0 5741 0 1 18583
 box -307 -847 307 847
-use sky130_fd_pr__res_xhigh_po_1p41_YSGX8S  R4
+use sky130_fd_pr__res_xhigh_po_1p41_YSGX8S  R4 ~/tt26b-Babies-First-LDO/mag
 timestamp 1779066585
 transform 1 0 6667 0 1 16257
 box -307 -2257 307 2257
-use sky130_fd_pr__res_xhigh_po_1p41_7QG8KB  R8
+use sky130_fd_pr__res_xhigh_po_1p41_7QG8KB  R8 ~/tt26b-Babies-First-LDO/mag
 timestamp 1779066585
 transform 1 0 1675 0 1 1864
 box -307 -1142 307 1142
-use sky130_fd_pr__cap_mim_m3_1_STSYNP  X1_C1
+use sky130_fd_pr__cap_mim_m3_1_STSYNP  X1_C1 ~/tt26b-Babies-First-LDO/mag
 timestamp 1778089171
 transform 1 0 -8608 0 1 15552
 box -2016 -1540 2016 1540
-use sky130_fd_pr__cap_mim_m3_1_QP9YHK  X1_C2
+use sky130_fd_pr__cap_mim_m3_1_QP9YHK  X1_C2 ~/tt26b-Babies-First-LDO/mag
 timestamp 1778089171
 transform -1 0 -6574 0 -1 6142
 box -3216 -6400 3216 6400
-use sky130_fd_pr__nfet_01v8_Y2657Z  X1_M9
+use sky130_fd_pr__nfet_01v8_Y2657Z  X1_M9 ~/tt26b-Babies-First-LDO/mag
 timestamp 1778089171
 transform 0 1 4434 -1 0 2204
 box -232 -810 232 810
@@ -855,23 +856,23 @@ use sky130_fd_pr__nfet_01v8_Y2657Z  X1_M10
 timestamp 1778089171
 transform 0 1 2806 -1 0 2196
 box -232 -810 232 810
-use sky130_fd_pr__nfet_01v8_W965F3  X1_M11
+use sky130_fd_pr__nfet_01v8_W965F3  X1_M11 ~/tt26b-Babies-First-LDO/mag
 timestamp 1778089171
 transform 0 -1 -6536 1 0 13349
 box -297 -2010 297 2010
-use sky130_fd_pr__pfet_01v8_lvt_ZPPFMQ  X1_M12
+use sky130_fd_pr__pfet_01v8_lvt_ZPPFMQ  X1_M12 ~/tt26b-Babies-First-LDO/mag
 timestamp 1778089171
 transform -1 0 1926 0 -1 13079
 box -268 -519 268 519
-use sky130_fd_pr__pfet_01v8_lvt_D7EHUM  X1_M13
+use sky130_fd_pr__pfet_01v8_lvt_D7EHUM  X1_M13 ~/tt26b-Babies-First-LDO/mag
 timestamp 1778089171
 transform 0 1 1833 -1 0 11325
 box -975 -3219 975 3219
-use sky130_fd_pr__pfet_01v8_lvt_Z7GDFQ  X1_M14
+use sky130_fd_pr__pfet_01v8_lvt_Z7GDFQ  X1_M14 ~/tt26b-Babies-First-LDO/mag
 timestamp 1779040905
 transform 0 1 -1493 -1 0 14767
 box -773 -4719 773 4719
-use sky130_fd_pr__pfet_01v8_lvt_EH7T5T  X1_M15
+use sky130_fd_pr__pfet_01v8_lvt_EH7T5T  X1_M15 ~/tt26b-Babies-First-LDO/mag
 timestamp 1778089171
 transform -1 0 4167 0 -1 6261
 box -427 -3819 427 3819
@@ -879,7 +880,7 @@ use sky130_fd_pr__pfet_01v8_lvt_EH7T5T  X1_M16
 timestamp 1778089171
 transform 1 0 3116 0 1 6275
 box -427 -3819 427 3819
-use sky130_fd_pr__res_high_po_5p73_4CGAJ9  X1_R2
+use sky130_fd_pr__res_high_po_5p73_4CGAJ9  X1_R2 ~/tt26b-Babies-First-LDO/mag
 timestamp 1778089171
 transform 1 0 -2415 0 1 12541
 box -739 -1155 739 1155
