@@ -1,57 +1,58 @@
 magic
 tech sky130A
+magscale 1 2
 timestamp 1779066585
 << pwell >>
-rect -153 -1128 153 1128
+rect -307 -2257 307 2257
 << psubdiff >>
-rect -135 1093 -87 1110
-rect 87 1093 135 1110
-rect -135 1062 -118 1093
-rect 118 1062 135 1093
-rect -135 -1093 -118 -1062
-rect 118 -1093 135 -1062
-rect -135 -1110 -87 -1093
-rect 87 -1110 135 -1093
+rect -271 2187 -175 2221
+rect 175 2187 271 2221
+rect -271 2125 -237 2187
+rect 237 2125 271 2187
+rect -271 -2187 -237 -2125
+rect 237 -2187 271 -2125
+rect -271 -2221 -175 -2187
+rect 175 -2221 271 -2187
 << psubdiffcont >>
-rect -87 1093 87 1110
-rect -135 -1062 -118 1062
-rect 118 -1062 135 1062
-rect -87 -1110 87 -1093
+rect -175 2187 175 2221
+rect -271 -2125 -237 2125
+rect 237 -2125 271 2125
+rect -175 -2221 175 -2187
 << xpolycontact >>
-rect -70 829 70 1045
-rect -70 -1045 70 -829
+rect -141 1659 141 2091
+rect -141 -2091 141 -1659
 << xpolyres >>
-rect -70 -829 70 829
+rect -141 -1659 141 1659
 << locali >>
-rect -135 1093 -87 1110
-rect 87 1093 135 1110
-rect -135 1062 -118 1093
-rect 118 1062 135 1093
-rect -135 -1093 -118 -1062
-rect 118 -1093 135 -1062
-rect -135 -1110 -87 -1093
-rect 87 -1110 135 -1093
+rect -271 2187 -175 2221
+rect 175 2187 271 2221
+rect -271 2125 -237 2187
+rect 237 2125 271 2187
+rect -271 -2187 -237 -2125
+rect 237 -2187 271 -2125
+rect -271 -2221 -175 -2187
+rect 175 -2221 271 -2187
 << viali >>
-rect -62 838 62 1036
-rect -62 -1036 62 -838
+rect -125 1676 125 2073
+rect -125 -2073 125 -1676
 << metal1 >>
-rect -65 1036 65 1042
-rect -65 838 -62 1036
-rect 62 838 65 1036
-rect -65 832 65 838
-rect -65 -838 65 -832
-rect -65 -1036 -62 -838
-rect 62 -1036 65 -838
-rect -65 -1042 65 -1036
+rect -131 2073 131 2085
+rect -131 1676 -125 2073
+rect 125 1676 131 2073
+rect -131 1664 131 1676
+rect -131 -1676 131 -1664
+rect -131 -2073 -125 -1676
+rect 125 -2073 131 -1676
+rect -131 -2085 131 -2073
 << labels >>
-rlabel psubdiffcont 0 -1102 0 -1102 0 B
+rlabel psubdiffcont 0 -2204 0 -2204 0 B
 port 1 nsew
-rlabel xpolycontact 0 1028 0 1028 0 R1
+rlabel xpolycontact 0 2056 0 2056 0 R1
 port 2 nsew
-rlabel xpolycontact 0 -1028 0 -1028 0 R2
+rlabel xpolycontact 0 -2056 0 -2056 0 R2
 port 3 nsew
 << properties >>
-string FIXED_BBOX -127 -1102 127 1102
+string FIXED_BBOX -254 -2204 254 2204
 string gencell sky130_fd_pr__res_xhigh_po_1p41
 string library sky130
 string parameters w 1.410 l 16.75 m 1 nx 1 wmin 1.410 lmin 0.50 class resistor rho 2000 val 24.025k dummy 0 dw 0.0 term 188.2 sterm 0.0 caplen 0 wmax 1.410 guard 1 glc 1 grc 1 gtc 1 gbc 1 compatible {sky130_fd_pr__res_xhigh_po_0p35  sky130_fd_pr__res_xhigh_po_0p69 sky130_fd_pr__res_xhigh_po_1p41  sky130_fd_pr__res_xhigh_po_2p85 sky130_fd_pr__res_xhigh_po_5p73} snake 0 full_metal 1 n_guard 0 hv_guard 0 vias 1 viagb 0 viagt 0 viagl 0 viagr 0 doports 1
