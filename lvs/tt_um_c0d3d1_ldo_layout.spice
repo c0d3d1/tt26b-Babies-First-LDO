@@ -182,22 +182,24 @@ XQ2_0 Q2_E VSUBS VSUBS sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
 + uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7] uio_out[0]
 + uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uio_out[7] uo_out[0]
 + uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7] VDPWR VGND
-Xpass_pmos_0 VDPWR VDPWR ua[0] ua[0] ua[0] ua[0] ua[0] bg_core_route_all_0/X2_R2/R1
-+ ua[0] VDPWR VDPWR ua[0] VDPWR VDPWR VDPWR pass_pmos
+Xpass_pmos_0 VDPWR VDPWR bg_core_route_all_0/R3/R1 bg_core_route_all_0/R3/R1 bg_core_route_all_0/R3/R1
++ bg_core_route_all_0/R3/R1 bg_core_route_all_0/R3/R1 bg_core_route_all_0/X2_R2/R1
++ bg_core_route_all_0/R3/R1 VDPWR VDPWR bg_core_route_all_0/R3/R1 VDPWR VDPWR VDPWR
++ pass_pmos
 Xbg_core_route_all_0 bg_core_route_all_0/X1_R2/R2 bg_core_route_all_0/X1_R2/R2 bg_core_route_all_0/X2_M9/D
 + VDPWR bg_core_route_all_0/X2_R2/R2 bg_core_route_all_0/X2_R2/R2 VDPWR VDPWR VGND
 + VDPWR bg_core_route_all_0/X2_R2/R1 bg_core_route_all_0/M14_D VDPWR bg_core_route_all_0/R2/R1
 + bg_core_route_all_0/X2_R2/R1 bg_core_route_all_0/M14_D VDPWR bg_core_route_all_0/X1_M16/B
 + bg_core_route_all_0/X2_R2/R1 bg_core_route_all_0/X2_R2/R1 bg_core_route_all_0/M14_D
-+ bg_core_route_all_0/M14_D ua[0] VGND bg_core_route_all_0/X2_M9/D VGND bg_core_route_all_0/M14_D
-+ bg_core_route_all_0/X2_R2/R1 VGND bg_core_route_all_0/M14_D bg_core_route_all_0/M14_D
-+ bg_core_route_all_0/M14_D VDPWR VDPWR bg_core_route_all_0/X1_M9/D bg_core_route_all_0/Vref
-+ VDPWR VDPWR VGND bg_core_route_all_0/Q1_E bg_core_route_all_0/X1_M9/G bg_core_route_all_0/Vref
-+ VDPWR VDPWR VDPWR bg_core_route_all_0/Q2_E VGND ua[1] bg_core_route_all_0/R2/R1
-+ bg_core_route_all_0/M14_D bg_core_route_all_0/X1_M9/D bg_core_route_all_0/X2_M16/B
-+ VDPWR bg_core_route_all_0/X2_R2/R1 VDPWR bg_core_route_all_0/X1_M16/B VDPWR VDPWR
-+ bg_core_route_all_0/Q1_E VGND bg_core_route_all_0/X2_M16/B bg_core_route_all_0/X1_M9/G
-+ bg_core_route_all_0/X2_M9/D VGND ua[1] VDPWR VDPWR VGND VDPWR bg_core_route_all_0/X1_M9/D
-+ bg_core_route_all_0/X2_R2/R1 VDPWR bg_core_route_all
++ bg_core_route_all_0/M14_D bg_core_route_all_0/R3/R1 VGND bg_core_route_all_0/X2_M9/D
++ VGND bg_core_route_all_0/M14_D bg_core_route_all_0/X2_R2/R1 VGND bg_core_route_all_0/M14_D
++ bg_core_route_all_0/M14_D bg_core_route_all_0/M14_D VDPWR VDPWR bg_core_route_all_0/X1_M9/D
++ bg_core_route_all_0/Vref VDPWR VDPWR VGND bg_core_route_all_0/Q1_E bg_core_route_all_0/X1_M9/G
++ bg_core_route_all_0/Vref VDPWR VDPWR VDPWR bg_core_route_all_0/Q2_E VGND bg_core_route_all_0/X2_M12/G
++ bg_core_route_all_0/R2/R1 bg_core_route_all_0/M14_D bg_core_route_all_0/X1_M9/D
++ bg_core_route_all_0/X2_M16/B VDPWR bg_core_route_all_0/X2_R2/R1 VDPWR bg_core_route_all_0/X1_M16/B
++ VDPWR VDPWR bg_core_route_all_0/Q1_E VGND bg_core_route_all_0/X2_M16/B bg_core_route_all_0/X1_M9/G
++ bg_core_route_all_0/X2_M9/D VGND bg_core_route_all_0/X2_M12/G VDPWR VDPWR VGND VDPWR
++ bg_core_route_all_0/X1_M9/D bg_core_route_all_0/X2_R2/R1 VDPWR bg_core_route_all
 .ends
 
