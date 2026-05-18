@@ -2,8 +2,6 @@ magic
 tech sky130A
 magscale 1 2
 timestamp 1779081279
-<< checkpaint >>
-rect 5352 3480 28300 44380
 << pwell >>
 rect 8854 18916 9468 23430
 rect 9772 17996 10386 19690
@@ -1165,9 +1163,9 @@ rect 26498 0 26678 192
 rect 30360 188 30542 340
 rect 30362 0 30542 188
 use bg_core_route_all  bg_core_route_all_0
-timestamp 1779081826
+timestamp 1779081279
 transform -1 0 15828 0 -1 37430
-box -11212 -5690 9216 32690
+box -11212 -5690 9203 32690
 use pass_pmos  pass_pmos_0
 timestamp 1778867838
 transform -1 0 23679 0 -1 4075
