@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1779083789
+timestamp 1779084254
 << nwell >>
 rect 3182 25830 3996 25844
 rect 3182 25542 3996 25572
@@ -928,8 +928,6 @@ timestamp 1778089171
 transform 1 0 -2419 0 1 28023
 box -739 -1155 739 1155
 << labels >>
-rlabel space 8186 -665 8880 -604 1 GND
-rlabel metal1 4028 -620 8838 -16 0 Q2_E
 rlabel space 4025 777 8838 1381 1 Q2_E
 rlabel metal1 1538 907 3013 1294 1 Q1_E
 rlabel space 385 3341 561 9340 5 VDD
@@ -939,7 +937,6 @@ rlabel space 5909 7474 6085 13473 1 VDD
 rlabel space 5909 7474 6085 13473 1 Vdd
 rlabel metal2 -5978 14140 -5850 15406 1 M14_D
 rlabel metal2 -1376 14154 2872 15412 1 VDD
-rlabel metal2 6077 -629 6764 1377 1 Q2_E
 rlabel metal1 4035 787 8845 1391 0 Q2_E
 rlabel metal2 5588 6640 5693 6642 1 Vref
 rlabel metal2 -1132 10512 -1120 13762 1 VDD
@@ -951,4 +948,7 @@ rlabel metal1 2228 17500 3420 17532 1 GND
 rlabel metal2 -1136 25994 -1124 29626 1 VDD
 rlabel metal2 -1144 25994 1828 27624 1 VDD
 rlabel metal2 5556 820 5584 2002 1 Q2_E
+rlabel metal2 6077 -629 6764 1377 1 Q2_E
+rlabel metal1 4028 -620 8838 -16 0 Q2_E
+rlabel space 8186 -665 8880 -604 1 GND
 << end >>
